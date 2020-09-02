@@ -1,0 +1,4 @@
+Go to the folder where the files are located
+From command prompt, key in the below command
+
+copy *.csv mergedFile.csv
