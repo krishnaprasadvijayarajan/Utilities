@@ -1,0 +1,8 @@
+@echo off
+setlocal enabledelayedexpansion
+set FOLDER_PATH=C:\Some\Path\
+for %%f in (%FOLDER_PATH%*) do if %%f neq %~nx0 (
+    set "filename=%%~nf"
+    ren "%%f" "!filename:~0,-4!%%~xf"
+)
+PAUSE
